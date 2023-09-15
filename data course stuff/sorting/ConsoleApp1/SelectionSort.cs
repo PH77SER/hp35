@@ -9,13 +9,13 @@ class SelectionSort //TODO: TEST THIS
         int i; int j;
         for (i = 0; i < array.Length - 1 ; i++)
         {
-            int minimum = int.MaxValue;
+            int minimum = array.Length-1;
             for (j = i ; j < array.Length ; j++)
             {
-                if (array[j]<minimum)
-                    minimum = array[j];
+                if (array[j]<array[minimum])
+                    minimum = j;
             }
-            swap(ref array[i], ref array[j]);
+            swap(ref array[i], ref array[minimum]);
         }
         return array;
     }
