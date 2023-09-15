@@ -1,0 +1,122 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{minted}
+
+\begin{document}
+
+\title{
+    \textbf{Importance of sorted data}
+}
+\author{Serban Alin-Cristian}
+\date{Spring Fall 2023}
+
+\maketitle
+
+\section*{Introduction}
+
+In this assignment, I have implemented a linear and binary searching algorithm to try and find a specific key in an array of integers. With these two I've done some benchmarks on unsorted arrays (obviously using the linear search), and unsorted arrays (using both) and found, unsurprisingly, that using a sorted array with binary search is faster.
+
+Alongside these, I've done some benchmarking on finding duplicates in two unsorted arrays and then in two unsorted arrays. Comparing linear, binary, and another method I will be reffering to as "smart" search, where you increment the indices of both arrays until you find a duplicate. I will be explaining it in detail later down the report, but the smart search is much much faster than either linear or binary.
+
+\section*{Searching Methods - key in array}
+\subsection*{Linear - O(n)}
+The linear search is the simplest and slowest - going through every element in an array to try to find the key. However, with unsorted arrays, this is our only option. 
+
+\subsection*{Binary - O(log n)}
+Binary search uses only a sorted array, but is much faster due to how it functions - narrowing down which section of the array the key can be in by half each loop until it locates it, or finds that it's not in the array.
+\begin{minted}{csharp}
+int first = 0;
+int last = array.Length-1;
+while (true)
+    {
+        int index = (last+first)/2;
+        if (key == array[index])
+            return true;
+        if (key > array[index])
+            first = index+1;
+        else if (key < array[index])
+            last = index-1;
+        if (first > last)
+            return false;
+    }
+throw new Exception("array exited out of while true somehow");
+\end{minted}
+\section*{Searching Methods - duplicates in two arrays}
+\subsection*{Unsorted - Linear}
+If we have two unsorted arrays and we need to find duplicates in them, our only option is linear search and it takes a titanic amount of time, having O(n^2).
+
+ It might be more time efficient to sort an array and do another method at this point.
+
+\subsection*{Sorted - Linear}
+In two sorted arrays, linear is actually a little slower than in two unsorted arrays. This is because we go through a lot of elements that cannot be duplicates (for example, if we were searching for duplicates and we got to nr 37 in array1, we'd still have to go through 1,2,3...37), while in unsorted arrays we can randomly find the answer earlier.
+
+
+\subsection*{Sorted - Binary}
+You can also use binary search for finding elements in two sorted arrays by running it for every element in array1, to find duplicates in array2. It is, as expected, much faster. Not much to comment here.
+
+\subsection*{Sorted - Smart}
+And now comes the smart search. It works by having two arrays and each has an index. If the elements at the indexes are equal, we found our duplicate. If index1's element is bigger than index2's, then there are no possible duplicates under index1, so we increase it. Vice versa for if index1 is smaller than index2 until we reach the end of the array.
+\begin{minted}{csharp}
+int counter = 0; int i = 0; int j = 0;
+while (i<array1.Length-1 && j<array2.Length-1)
+{
+    if (array1[i] > array2[j])
+        j++;
+    if (array1[i] < array2[j])
+        i++;
+    else {counter++; i++; j++;}
+}
+return counter;
+\end{minted}
+\section*{Benchmarks}
+All of the following tables represent the total sum of time of each method, ran 1000 times, at array size n. For finding a key in a sorted/unsorted array, I used a set of 1000 randomly generated keys which can be present or missing from the array, and all the times are in miliseconds. 
+
+\subsection*{Key in array}
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{l|c|c}
+\textbf{n} & \textbf{linear} & \textbf{binary}\\
+\hline
+100 &227 &94 \\
+500 &904 &103\\
+1000 &1949 &120\\
+1500 &2721 &124\\
+\end{tabular}
+\caption{Total execution time in milliseconds to find a random key in an array 1000 times}
+\label{tab:table1}
+\end{center}
+\end{table}
+
+From here we can see that binary search is much faster than linear, but also increases in time logarithmically instead of linearly. I'm confident that if I used a larger dataset the disparity between linear and binary time would only get larger, but execution time would also get incredibly large.
+
+\subsection*{Duplicates in 2 sorted arrays}
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{l|c|c|c}
+\textbf{n} & \textbf{linear} & \textbf{binary} & \textbf{smart}\\
+\hline
+100&19&4&1\\
+500&462&42&2\\
+1000&1857&90&7\\
+1500&4104&147&12\\
+\end{tabular}
+\caption{Total execution time in milliseconds to find all duplicates in 2 sorted arrays 1000 times}
+\label{tab:table1}
+\end{center}
+\end{table}
+
+The trends from the previous table continue onto this one, however smart search proves to be an order of magnitude faster than binary. This is to be expected due to it minimizing the amount of elements it has to check again. 
+
+
+\section*{Conclusions and takeaways}
+
+As can be seen from the benchmarks, for finding data in arrays, linear search is the worst but the only option in case of unsorted data, binary is much better and its performance worsens logarithmically. If we can use other methods like smartsearch to accomplish our tasks without searching every element we should, or avoid searching through datasets altogether.
+
+
+
+
+
+
+\end{document}

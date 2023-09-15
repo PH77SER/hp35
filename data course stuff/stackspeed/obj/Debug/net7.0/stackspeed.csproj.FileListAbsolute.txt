@@ -1,0 +1,15 @@
+C:\Users\.2\Desktop\data course stuff\stackspeed\obj\Debug\net7.0\stackspeed.csproj.AssemblyReference.cache
+C:\Users\.2\Desktop\data course stuff\stackspeed\obj\Debug\net7.0\stackspeed.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\.2\Desktop\data course stuff\stackspeed\obj\Debug\net7.0\stackspeed.AssemblyInfoInputs.cache
+C:\Users\.2\Desktop\data course stuff\stackspeed\obj\Debug\net7.0\stackspeed.AssemblyInfo.cs
+C:\Users\.2\Desktop\data course stuff\stackspeed\obj\Debug\net7.0\stackspeed.csproj.CoreCompileInputs.cache
+C:\Users\.2\Desktop\data course stuff\stackspeed\bin\Debug\net7.0\stackspeed.exe
+c:\Users\.2\Desktop\data course stuff\stackspeed\bin\Debug\net7.0\stackspeed.deps.json
+c:\Users\.2\Desktop\data course stuff\stackspeed\bin\Debug\net7.0\stackspeed.runtimeconfig.json
+C:\Users\.2\Desktop\data course stuff\stackspeed\bin\Debug\net7.0\stackspeed.dll
+C:\Users\.2\Desktop\data course stuff\stackspeed\bin\Debug\net7.0\stackspeed.pdb
+C:\Users\.2\Desktop\data course stuff\stackspeed\obj\Debug\net7.0\stackspeed.dll
+C:\Users\.2\Desktop\data course stuff\stackspeed\obj\Debug\net7.0\refint\stackspeed.dll
+C:\Users\.2\Desktop\data course stuff\stackspeed\obj\Debug\net7.0\stackspeed.pdb
+c:\Users\.2\Desktop\data course stuff\stackspeed\obj\Debug\net7.0\stackspeed.genruntimeconfig.cache
+c:\Users\.2\Desktop\data course stuff\stackspeed\obj\Debug\net7.0\ref\stackspeed.dll

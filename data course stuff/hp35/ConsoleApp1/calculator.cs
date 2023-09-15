@@ -1,8 +1,8 @@
 public class Calculator
 {
     Item[] expr = new Item[32];
-    //StaticStack stack = new StaticStack();
-    DynamicStack stack = new DynamicStack();  //TOGGLE ME 1/2
+    StaticStack stack = new StaticStack();
+    //DynamicStack stack = new DynamicStack();  //TOGGLE ME 1/2
 
 
     public Calculator(Item[] expr)
@@ -12,8 +12,8 @@ public class Calculator
     public Calculator(Item[] expr, int size)
     {
         this.expr = expr;
-        //this.stack = new StaticStack(size);  
-        this.stack = new DynamicStack(size);   //TOGGLE ME 2/2
+        this.stack = new StaticStack(size);  
+        //this.stack = new DynamicStack(size);   //TOGGLE ME 2/2
     }
 
     
