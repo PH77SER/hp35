@@ -1,0 +1,15 @@
+c:\Users\.2\Desktop\data course 2 revengeance\hp35\data course stuff\doublylinkedlist\doublylinkedlist\bin\Debug\net7.0\doublylinkedlist.exe
+c:\Users\.2\Desktop\data course 2 revengeance\hp35\data course stuff\doublylinkedlist\doublylinkedlist\bin\Debug\net7.0\doublylinkedlist.deps.json
+c:\Users\.2\Desktop\data course 2 revengeance\hp35\data course stuff\doublylinkedlist\doublylinkedlist\bin\Debug\net7.0\doublylinkedlist.runtimeconfig.json
+c:\Users\.2\Desktop\data course 2 revengeance\hp35\data course stuff\doublylinkedlist\doublylinkedlist\bin\Debug\net7.0\doublylinkedlist.dll
+c:\Users\.2\Desktop\data course 2 revengeance\hp35\data course stuff\doublylinkedlist\doublylinkedlist\bin\Debug\net7.0\doublylinkedlist.pdb
+c:\Users\.2\Desktop\data course 2 revengeance\hp35\data course stuff\doublylinkedlist\doublylinkedlist\obj\Debug\net7.0\doublylinkedlist.csproj.AssemblyReference.cache
+c:\Users\.2\Desktop\data course 2 revengeance\hp35\data course stuff\doublylinkedlist\doublylinkedlist\obj\Debug\net7.0\doublylinkedlist.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\.2\Desktop\data course 2 revengeance\hp35\data course stuff\doublylinkedlist\doublylinkedlist\obj\Debug\net7.0\doublylinkedlist.AssemblyInfoInputs.cache
+c:\Users\.2\Desktop\data course 2 revengeance\hp35\data course stuff\doublylinkedlist\doublylinkedlist\obj\Debug\net7.0\doublylinkedlist.AssemblyInfo.cs
+c:\Users\.2\Desktop\data course 2 revengeance\hp35\data course stuff\doublylinkedlist\doublylinkedlist\obj\Debug\net7.0\doublylinkedlist.csproj.CoreCompileInputs.cache
+c:\Users\.2\Desktop\data course 2 revengeance\hp35\data course stuff\doublylinkedlist\doublylinkedlist\obj\Debug\net7.0\doublylinkedlist.dll
+c:\Users\.2\Desktop\data course 2 revengeance\hp35\data course stuff\doublylinkedlist\doublylinkedlist\obj\Debug\net7.0\refint\doublylinkedlist.dll
+c:\Users\.2\Desktop\data course 2 revengeance\hp35\data course stuff\doublylinkedlist\doublylinkedlist\obj\Debug\net7.0\doublylinkedlist.pdb
+c:\Users\.2\Desktop\data course 2 revengeance\hp35\data course stuff\doublylinkedlist\doublylinkedlist\obj\Debug\net7.0\doublylinkedlist.genruntimeconfig.cache
+c:\Users\.2\Desktop\data course 2 revengeance\hp35\data course stuff\doublylinkedlist\doublylinkedlist\obj\Debug\net7.0\ref\doublylinkedlist.dll
