@@ -1,20 +1,34 @@
 using static Util;
-class InsertionSort
+public class InsertionSort
 {
-    public int[] sort(int[] array)
+    public int[] sort(int[] inputArray)
     {
-        int i;
-        bool sorted = false;
-        while (!sorted)
-        {
-            sorted = true;
-            for (i = 1; i < array.Length; i++)
-            {
-                if (array[i-1] > array[i])
-                    {swap(ref array[i-1],ref array[i]); sorted = false; }
+        // int i;
+        // bool sorted = false;
+        // while (!sorted)
+        // {
+        //     sorted = true;
+        //     for (i = 1; i < inputArray.Length; i++)
+        //     {
+        //         if (inputArray[i-1] > inputArray[i])
+        //             {swap(ref inputArray[i-1],ref inputArray[i]); sorted = false; }
 
+        //     }
+        // }
+        // return array;
+
+        for (int i = 0; i < inputArray.Length - 1; i++)
+            {
+                for (int j = i + 1; j > 0; j--)
+                {
+                    if (inputArray[j - 1] > inputArray[j])
+                    {
+                        int temp = inputArray[j - 1];
+                        inputArray[j - 1] = inputArray[j];
+                        inputArray[j] = temp;
+                    }
+                  }
             }
-        }
-        return array;
+            return inputArray;      
     }
 }
